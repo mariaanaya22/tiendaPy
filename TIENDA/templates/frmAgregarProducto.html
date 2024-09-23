@@ -10,11 +10,11 @@
 
 {% block contenido %}
     <div class="container">
-        <h1 class="text-center fw-bold">Agregar Producto</h1>
+        <h1 class="text-center fw-bold">Agrega tu  Producto</h1>
         <div class="w-50" style="margin: 0 auto">
             <form action="/agregar" method="post" enctype="multipart/form-data" class="was-validated">
                 <div class="mt-2">
-                    <label for="txtCodigo" class="fw-bold">Código</label>
+                    <label for="txtCodigo" class="fw-bold">Codigo</label>
                     <input type="text" name="txtCodigo" id="" value="{{ producto['codigo'] if producto is not none else '' }}" class="form-control" required>
                 </div>
                 <div class="mt-2">
